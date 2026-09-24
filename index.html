@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bukidnon Espresso - highland coffee, roasted with care in the heart of Mindanao.">
     <title>Bukidnon Espresso | Highland Coffee</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -42,8 +43,8 @@
     <section class="home" id="home">
         <div class="row">
             <div class="content">
-                <p class="eyebrow">From the highlands of Mindanao</p>
-                <h3>Good mornings start in Bukidnon.</h3>
+                <p class="eyebrow"><span></span> From the highlands of Mindanao</p>
+                <h1>Good mornings start in Bukidnon.</h1>
                 <p class="hero-copy">Single-origin coffee, slow mornings, and a warm welcome from the mountain side.</p>
                 <div class="hero-actions">
                     <a href="#menu" class="btn">explore the menu</a>
@@ -53,21 +54,32 @@
                     <span class="detail-mark"><i class="fas fa-map-marker-alt"></i></span>
                     <span><strong>Malaybalay City</strong><br>coffee from the cool side of the island</span>
                 </div>
+                <div class="hero-notes" aria-label="Cafe highlights">
+                    <span><strong>01</strong> highland beans</span>
+                    <span><strong>02</strong> small-batch roast</span>
+                    <span><strong>03</strong> made with care</span>
+                </div>
             </div>
 
             <div class="image">
                 <div class="hero-image-frame">
                     <span class="hero-stamp">roasted<br>with care</span>
                     <img src="image/home-img-1.png" class="main-home-image" alt="A freshly brewed cup of Bukidnon Espresso">
-                    <span class="hero-image-caption">01 / house espresso</span>
+                    <span class="hero-image-caption"><strong>01</strong> / house espresso</span>
                 </div>
             </div>
         </div>
 
         <div class="image-slider">
-            <img src="image/home-img-1.png" alt="">
-            <img src="image/home-img-2.png" alt="">
-            <img src="image/home-img-3.png" alt="">
+            <button class="active" type="button" aria-label="Show house espresso">
+                <img src="image/home-img-1.png" alt="House espresso">
+            </button>
+            <button type="button" aria-label="Show cafe detail">
+                <img src="image/home-img-2.png" alt="Cafe detail">
+            </button>
+            <button type="button" aria-label="Show coffee detail">
+                <img src="image/home-img-3.png" alt="Coffee detail">
+            </button>
         </div>
     </section>
 
@@ -286,6 +298,10 @@
 
         <div class="credit">Bukidnon Espresso <span>grown high, brewed slow</span> | all rights reserved</div>
     </section>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
 
 
