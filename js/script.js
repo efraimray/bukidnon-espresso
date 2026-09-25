@@ -17,15 +17,19 @@ backToTop.onclick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-document.querySelectorAll('.image-slider button').forEach((thumbnail, index) => {
-    thumbnail.onclick = () => {
-        var src = thumbnail.querySelector('img').getAttribute('src');
-        document.querySelector('.main-home-image').src = src;
-        document.querySelector('.hero-image-caption strong').textContent = `0${index + 1}`;
-        document.querySelector('.image-slider button.active').classList.remove('active');
-        thumbnail.classList.add('active');
-    };
-});
+const heroSlides = document.querySelectorAll('.hero-background-slide');
+const heroSlideCount = document.querySelector('.hero-slide-count strong');
+let activeHeroSlide = 0;
+
+const showHeroSlide = (slideIndex) => {
+    activeHeroSlide = (slideIndex + heroSlides.length) % heroSlides.length;
+    heroSlides.forEach((slide, index) => slide.classList.toggle('active', index === activeHeroSlide));
+    heroSlideCount.textContent = `0${activeHeroSlide + 1}`;
+};
+
+document.querySelector('.hero-slide-prev').onclick = () => showHeroSlide(activeHeroSlide - 1);
+document.querySelector('.hero-slide-next').onclick = () => showHeroSlide(activeHeroSlide + 1);
+setInterval(() => showHeroSlide(activeHeroSlide + 1), 6500);
 
 document.querySelectorAll('.filter-button').forEach((filterButton) => {
     filterButton.onclick = () => {
@@ -59,5 +63,23 @@ var swiper = new Swiper(".review-slider", {
         768: {
             slidesPerView: 2
         }
+    },
+});
+
+var locationSwiper = new Swiper(".location-slider", {
+    spaceBetween: 20,
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".location-next",
+        prevEl: ".location-prev",
+    },
+    pagination: {
+        el: ".location-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
     },
 });

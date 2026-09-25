@@ -5,8 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bukidnon Espresso - highland coffee, roasted with care in the heart of Mindanao.">
-    <title>Bukidnon Espresso | Highland Coffee</title>
+    <meta name="description" content="Visit Bukidnon Espresso in Malaybalay City for highland coffee, single-origin beans, small-batch roasting, espresso, pastries, and slow mornings in Bukidnon.">
+    <meta name="keywords" content="Bukidnon coffee shop, Malaybalay coffee, highland coffee Philippines, single-origin coffee, espresso, Bukidnon cafe">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#173f35">
+    <title>Bukidnon Espresso | Coffee Shop in Malaybalay, Bukidnon</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bukidnon Espresso | Coffee Shop in Malaybalay, Bukidnon">
+    <meta property="og:description" content="Highland coffee, small-batch roasting, and slow mornings from the cool side of Mindanao.">
+    <meta property="og:image" content="social-preview.png">
+    <meta property="og:locale" content="en_PH">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bukidnon Espresso | Coffee Shop in Malaybalay, Bukidnon">
+    <meta name="twitter:description" content="Highland coffee, small-batch roasting, and slow mornings from the cool side of Mindanao.">
+    <meta name="twitter:image" content="social-preview.png">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "name": "Bukidnon Espresso",
+            "description": "A highland coffee shop serving single-origin coffee, small-batch roasted beans, espresso drinks, and pastries in Malaybalay City, Bukidnon.",
+            "image": "social-preview.png",
+            "servesCuisine": ["Coffee", "Filipino"],
+            "priceRange": "PHP 130-195",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Malaybalay City",
+                "addressRegion": "Bukidnon",
+                "addressCountry": "PH"
+            },
+            "telephone": "+63 917 842 1960",
+            "email": "hello@bukidnonespresso.ph",
+            "openingHours": "Mo-Su 07:00-20:00",
+            "hasMenu": "#menu",
+            "hasMap": "https://maps.app.goo.gl/PzbsnQ3vVxgi9DMK7",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "8.152940861302183",
+                "longitude": "125.12864584834023"
+            }
+        }
+    </script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- SWIPER -->
@@ -33,6 +74,7 @@
             <a href="#about">our story</a>
             <a href="#journey">our process</a>
             <a href="#menu">menu</a>
+            <a href="#location">location</a>
             <a href="#review">kind words</a>
             <a href="#book">visit us</a>
         </nav>
@@ -42,6 +84,12 @@
 
     <!-- HOME -->
     <section class="home" id="home">
+        <div class="hero-background" aria-hidden="true">
+            <div class="hero-background-slide active" style="background-image: url('image/hero-section/slider1.jpg');"></div>
+            <div class="hero-background-slide" style="background-image: url('image/hero-section/slider2.jpg');"></div>
+            <div class="hero-background-slide" style="background-image: url('image/hero-section/slider3.jpg');"></div>
+        </div>
+
         <div class="row">
             <div class="content">
                 <p class="eyebrow"><span></span> From the highlands of Mindanao</p>
@@ -61,26 +109,12 @@
                     <span><strong>03</strong> made with care</span>
                 </div>
             </div>
-
-            <div class="image">
-                <div class="hero-image-frame">
-                    <span class="hero-stamp">roasted<br>with care</span>
-                    <img src="image/home-img-1.png" class="main-home-image" alt="A freshly brewed cup of Bukidnon Espresso">
-                    <span class="hero-image-caption"><strong>01</strong> / house espresso</span>
-                </div>
-            </div>
         </div>
 
-        <div class="image-slider">
-            <button class="active" type="button" aria-label="Show house espresso">
-                <img src="image/home-img-1.png" alt="House espresso">
-            </button>
-            <button type="button" aria-label="Show cafe detail">
-                <img src="image/home-img-2.png" alt="Cafe detail">
-            </button>
-            <button type="button" aria-label="Show coffee detail">
-                <img src="image/home-img-3.png" alt="Coffee detail">
-            </button>
+        <div class="hero-slider-controls" aria-label="Hero background slider controls">
+            <button class="hero-slide-prev" type="button" aria-label="Show previous hero image"><i class="fas fa-arrow-left"></i></button>
+            <span class="hero-slide-count"><strong>01</strong> / 03</span>
+            <button class="hero-slide-next" type="button" aria-label="Show next hero image"><i class="fas fa-arrow-right"></i></button>
         </div>
     </section>
 
@@ -233,9 +267,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>The kind of place where the first sip makes you slow down. The espresso is bright, balanced, and deeply comforting.</p>
-                    <h3>Maria L.</h3>
-                    <span>local regular</span>
+                    <p>Ang sarap ng espresso, especially on a cool Malaybalay morning. The space feels warm, quiet, and easy to call home.</p>
+                    <h3>Janelle Mae Santos</h3>
+                    <span>Malaybalay regular</span>
                 </div>
 
                 <div class="swiper-slide box">
@@ -249,8 +283,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>Beautiful coffee, thoughtful people, and the best honey oat latte I have had in a long time.</p>
-                    <h3>Anton R.</h3>
+                    <p>The honey oat latte is my new favorite. I come here after the market for good coffee, fresh pastries, and a little pahinga.</p>
+                    <h3>Carlo Miguel Reyes</h3>
                     <span>weekend guest</span>
                 </div>
 
@@ -265,8 +299,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>You can taste the highlands in every cup. Bukidnon Espresso feels grounded, generous, and very easy to return to.</p>
-                    <h3>Leah C.</h3>
+                    <p>You can taste the Bukidnon highlands in every cup. The beans are bright and smooth, and the people make you feel welcome.</p>
+                    <h3>Bea Dela Cruz</h3>
                     <span>coffee lover</span>
                 </div>
 
@@ -281,12 +315,62 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>A calm corner, a warm pastry, and a beautifully made cortado. This is now part of my morning route.</p>
-                    <h3>Paolo D.</h3>
+                    <p>Perfect for a rainy morning: a creamy cortado, warm pan de sal, and a calm table before work. Kita kits again tomorrow!</p>
+                    <h3>Ramon Joseph Lim</h3>
                     <span>morning regular</span>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location" id="location">
+        <div class="location-copy">
+            <p class="eyebrow"><span></span> find your way here</p>
+            <h2>A warm table is waiting in Malaybalay.</h2>
+            <p>Come find us in the heart of Bukidnon for a bright cup, a slow breakfast, and a little breathing room between plans.</p>
+
+            <div class="location-details">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span><strong>Malaybalay City</strong><br>Bukidnon, Philippines</span>
+                </div>
+                <div>
+                    <i class="far fa-clock"></i>
+                    <span><strong>Open every day</strong><br>7:00 AM - 8:00 PM</span>
+                </div>
+            </div>
+
+            <a class="btn" href="https://maps.app.goo.gl/PzbsnQ3vVxgi9DMK7" target="_blank" rel="noopener">get directions <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.114842089016!2d125.12864584834023!3d8.152940861302183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffaa3c80076249%3A0x8b74c99e7f1b1657!2sMalaybalay%20City%2C%20Bukidnon!5e0!3m2!1sen!2sph!4v1790344914891!5m2!1sen!2sph" title="Map showing Bukidnon Espresso in Malaybalay City, Bukidnon" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <div class="location-gallery">
+            <div class="swiper location-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide location-slide">
+                        <img src="image/home-img-2.png" alt="A detail from the Bukidnon Espresso coffee bar">
+                        <div><span>01</span><strong>the coffee bar</strong></div>
+                    </div>
+                    <div class="swiper-slide location-slide">
+                        <img src="image/about-img.png" alt="A welcoming cafe moment at Bukidnon Espresso">
+                        <div><span>02</span><strong>space to slow down</strong></div>
+                    </div>
+                    <div class="swiper-slide location-slide">
+                        <img src="image/home-img-3.png" alt="A freshly prepared coffee at Bukidnon Espresso">
+                        <div><span>03</span><strong>made for lingering</strong></div>
+                    </div>
+                </div>
+                <div class="location-controls">
+                    <button class="location-prev" type="button" aria-label="Previous place image"><i class="fas fa-arrow-left"></i></button>
+                    <div class="location-pagination"></div>
+                    <button class="location-next" type="button" aria-label="Next place image"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -319,6 +403,7 @@
                 <a href="#about"><i class="fas fa-arrow-right"></i> our story</a>
                 <a href="#journey"><i class="fas fa-arrow-right"></i> our process</a>
                 <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#location"><i class="fas fa-arrow-right"></i> location</a>
                 <a href="#review"><i class="fas fa-arrow-right"></i> kind words</a>
                 <a href="#book"><i class="fas fa-arrow-right"></i> visit us</a>
             </div>
