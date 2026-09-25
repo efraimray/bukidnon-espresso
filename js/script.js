@@ -27,6 +27,19 @@ document.querySelectorAll('.image-slider button').forEach((thumbnail, index) => 
     };
 });
 
+document.querySelectorAll('.filter-button').forEach((filterButton) => {
+    filterButton.onclick = () => {
+        const filter = filterButton.dataset.filter;
+
+        document.querySelectorAll('.filter-button').forEach((button) => button.classList.remove('active'));
+        filterButton.classList.add('active');
+
+        document.querySelectorAll('.menu .box').forEach((item) => {
+            item.classList.toggle('is-hidden', filter !== 'all' && item.dataset.category !== filter);
+        });
+    };
+});
+
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     pagination: {

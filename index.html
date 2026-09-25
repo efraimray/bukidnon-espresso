@@ -31,6 +31,7 @@
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#about">our story</a>
+            <a href="#journey">our process</a>
             <a href="#menu">menu</a>
             <a href="#review">kind words</a>
             <a href="#book">visit us</a>
@@ -114,12 +115,52 @@
         </div>
     </section>
 
+    <!-- JOURNEY -->
+    <section class="journey" id="journey">
+        <div class="journey-intro">
+            <p class="eyebrow"><span></span> From seed to first sip</p>
+            <h2>Every cup carries a little bit of the mountain.</h2>
+            <p>We keep the process close and intentional: work with growers, roast in small batches, and make every drink to be enjoyed slowly.</p>
+            <a href="#book" class="text-link">visit the roastery <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="journey-steps">
+            <article class="journey-step">
+                <span class="step-number">01</span>
+                <i class="fas fa-seedling"></i>
+                <h3>grown in cool soil</h3>
+                <p>Highland weather gives our coffee a bright, layered character.</p>
+            </article>
+            <article class="journey-step featured-step">
+                <span class="step-number">02</span>
+                <i class="fas fa-fire"></i>
+                <h3>roasted in small batches</h3>
+                <p>We roast with patience to let cacao, fruit, and sweetness come forward.</p>
+            </article>
+            <article class="journey-step">
+                <span class="step-number">03</span>
+                <i class="fas fa-mug-hot"></i>
+                <h3>served for slow mornings</h3>
+                <p>Good coffee is better when there is time to stay for another sip.</p>
+            </article>
+        </div>
+    </section>
+
     <!-- MENU -->
     <section class="menu" id="menu">
         <h1 class="heading">the menu <span>house favourites</span></h1>
 
+        <div class="menu-intro">
+            <p>Start with something familiar or follow the highlands somewhere new. Our menu changes with the season, but the welcome stays warm.</p>
+            <div class="menu-filters" aria-label="Filter menu items">
+                <button class="filter-button active" type="button" data-filter="all">all day</button>
+                <button class="filter-button" type="button" data-filter="coffee">coffee</button>
+                <button class="filter-button" type="button" data-filter="bites">bites</button>
+            </div>
+        </div>
+
         <div class="box-container">
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="coffee">
                 <img src="image/menu-1.png" alt="">
                 <div class="content">
                     <h3>mountain americano</h3>
@@ -128,7 +169,7 @@
                 </div>
             </a>
 
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="coffee">
                 <img src="image/menu-2.png" alt="">
                 <div class="content">
                     <h3>honey oat latte</h3>
@@ -137,7 +178,7 @@
                 </div>
             </a>
 
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="coffee">
                 <img src="image/menu-3.png" alt="">
                 <div class="content">
                     <h3>cacao mocha</h3>
@@ -146,7 +187,7 @@
                 </div>
             </a>
 
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="coffee">
                 <img src="image/menu-4.png" alt="">
                 <div class="content">
                     <h3>cold brew</h3>
@@ -155,7 +196,7 @@
                 </div>
             </a>
 
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="coffee">
                 <img src="image/menu-5.png" alt="">
                 <div class="content">
                     <h3>barako cortado</h3>
@@ -164,7 +205,7 @@
                 </div>
             </a>
 
-            <a href="#" class="box">
+            <a href="#" class="box" data-category="bites">
                 <img src="image/menu-6.png" alt="">
                 <div class="content">
                     <h3>banana bread</h3>
@@ -276,6 +317,7 @@
                 <h3>quick links</h3>
                 <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
                 <a href="#about"><i class="fas fa-arrow-right"></i> our story</a>
+                <a href="#journey"><i class="fas fa-arrow-right"></i> our process</a>
                 <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
                 <a href="#review"><i class="fas fa-arrow-right"></i> kind words</a>
                 <a href="#book"><i class="fas fa-arrow-right"></i> visit us</a>
